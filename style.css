@@ -3,6 +3,7 @@ body{
 }
 a {
     text-align: center;
+    margin-left: 50%;
 }
 button{
     color:yellow;
