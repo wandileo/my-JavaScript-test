@@ -4,14 +4,24 @@ let password = [];
 function addLogin() {
         var names = document.getElementById("usrname").value;
         var password = document.getElementById("psw").value;
-        let displayShow = document.getElementById("displayShow");
 
-        if (names === "" || password === "") {
-            alert("Email or Password is incorrect");
+        if (names == "") {
+            alert("User is incorrect");
+            return;
+        }
             
-        }else{
+        if (password == "") {
+            alert("Password is incorrect");
+            return;
+        }
+
+        if(names == "user@gmail.com" && password == "mypassword") {
             console.log(names, password);
         location.href="./home.html";
+        }
+
+        else {
+          alert("User & Password are incorrect");
         }
         
 }
